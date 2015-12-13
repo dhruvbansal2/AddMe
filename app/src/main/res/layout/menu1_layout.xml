@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#000000">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Search"
+        android:id="@+id/SButton"
+        android:textColor="#47ffff"
+        android:background="#93686868"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:id="@+id/SearchUserName"
+        android:textColor="#ffffff"
+        android:textColorHint="#47ffff"
+        android:hint="Username"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:id="@+id/SearchedUser"
+        android:layout_marginTop="44dp"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/SButton"
+        android:layout_toRightOf="@+id/username_text"
+        android:layout_toEndOf="@+id/username_text"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:id="@+id/searchedName"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/SearchedUser"
+        android:layout_toRightOf="@+id/username_text"
+        android:layout_toEndOf="@+id/username_text" />
+    <ImageButton
+        android:id="@+id/twitter"
+        android:name="Twitter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/twitter"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp" />
+
+    <ImageButton
+        android:id="@+id/facebook"
+        android:name="Facebook"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/facebook"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignTop="@+id/twitter"
+        android:layout_toRightOf="@+id/SearchUserName"
+        android:layout_toEndOf="@+id/SearchUserName" />
+
+    <ImageButton
+        android:id="@+id/instagram"
+        android:name="Instagram"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/instagram"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignTop="@+id/twitter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:id="@+id/username_text"
+        android:textColor="#47ffff"
+        android:textSize="20dp"
+        android:layout_above="@+id/searchedName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name:"
+        android:id="@+id/fullname_text"
+        android:textSize="20dp"
+        android:textColor="#47ffff"
+        android:layout_above="@+id/age"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:id="@+id/age_text"
+        android:textColor="#47ffff"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/age"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:id="@+id/email_text"
+        android:textSize="20dp"
+        android:textColor="#47ffff"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/age_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:id="@+id/email"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/email_text"
+        android:layout_toRightOf="@+id/email_text"
+        android:textSize="25dp"
+        android:layout_alignRight="@+id/searchedName"
+        android:layout_alignEnd="@+id/searchedName" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:id="@+id/age"
+        android:textColor="#ffffff"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/searchedName"
+        android:layout_toRightOf="@+id/age_text"
+        android:layout_toEndOf="@+id/age_text"
+        android:textSize="25dp" />
+
+</RelativeLayout>

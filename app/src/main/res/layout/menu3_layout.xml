@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#000000">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Log Out"
+        android:id="@+id/logout"
+        android:textColor="#47ffff"
+        android:background="#93686868"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/fullName"
+        android:textColorHint="#47ffff"
+        android:hint="Full Name"
+        android:textColor="#ffffff"
+        android:singleLine="false"
+        android:layout_marginTop="84dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/Age"
+        android:textColorHint="#47ffff"
+        android:hint="Age"
+        android:textColor="#ffffff"
+        android:singleLine="false"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/fullName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/email"
+        android:textColorHint="#47ffff"
+        android:hint="Email"
+        android:textColor="#ffffff"
+        android:singleLine="false"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/Age"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Update"
+        android:id="@+id/update"
+        android:textColor="#47ffff"
+        android:layout_above="@+id/logout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#47ffff"
+        android:textSize="30dp"
+        android:text="Settings" />
+    <Button
+        android:id="@+id/twitter_login_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:text="Twitter Login"
+        android:textColor="#47ffff"
+        android:layout_below="@+id/email"
+        android:layout_alignLeft="@+id/logout"
+        android:layout_alignStart="@+id/logout"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="46dp" />
+    <Button
+        android:id="@+id/twitter_logout_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:text="Twitter Logout"
+        android:textColor="#47ffff"
+        android:layout_alignTop="@+id/twitter_login_button"
+        android:layout_toRightOf="@+id/twitter_login_button"
+        android:layout_toEndOf="@+id/twitter_login_button" />
+    <Button
+        android:id="@+id/facebook_login_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:text="Facebook Login"
+        android:textColor="#47ffff"
+        android:layout_below="@+id/twitter_login_button"
+        android:layout_alignLeft="@+id/twitter_login_button"
+        android:layout_alignStart="@+id/twitter_login_button"
+        android:textSize="17dp" />
+    <Button
+        android:id="@+id/facebook_logout_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:text="Facebook Lagout"
+        android:textColor="#47ffff"
+        android:layout_below="@+id/twitter_logout_button"
+        android:layout_alignLeft="@+id/twitter_logout_button"
+        android:layout_alignStart="@+id/twitter_logout_button"
+        android:textSize="15dp" />
+
+</RelativeLayout>
